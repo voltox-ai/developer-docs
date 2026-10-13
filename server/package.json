@@ -1,0 +1,37 @@
+{
+  "name": "voltox-ai-dev-mcp",
+  "version": "1.0.0",
+  "description": "Voltox AI Dev MCP server: docs, guardrails, code, review and ep2-grade self-assessments for Voltox on wallee",
+  "scripts": {
+    "content": "node scripts/build-content.mjs",
+    "typecheck": "npm run content && tsc -p .",
+    "build:stdio": "npm run content && esbuild src/stdio.ts --bundle --platform=node --format=esm --target=node20 --outfile=dist/stdio.js --banner:js=\"#!/usr/bin/env node\" --legal-comments=none",
+    "build:worker": "npm run content && wrangler deploy --dry-run --outdir dist/worker",
+    "test": "npm run content && esbuild test/*.test.ts --bundle --platform=node --format=esm --target=node20 --outdir=.test-build --out-extension:.js=.test.js --log-level=warning && node --test .test-build/*.test.js",
+    "dev": "npm run content && wrangler dev",
+    "deploy": "npm run typecheck && npm test && wrangler deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@cloudflare/workers-oauth-provider": "^1.2.3",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261013.1",
+    "@types/node": "^22.20.5",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.150.0"
+  },
+  "type": "module",
+  "private": true,
+  "bin": {
+    "voltox-ai-dev-mcp": "dist/stdio.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

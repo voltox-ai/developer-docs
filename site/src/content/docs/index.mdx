@@ -1,0 +1,44 @@
+---
+title: Voltox Developers
+description: Integrate Voltox Age Verification, Smile & Pay, Face Recognition and KYC with wallee terminals, SoftPOS and e-commerce — built along ep2.
+template: splash
+hero:
+  tagline: Age assurance, facial authentication and payments on wallee — integrated in record time, secure by default and ready for ep2 acceptance.
+  actions:
+    - text: Get started
+      link: getting-started/
+      icon: right-arrow
+    - text: Connect your AI assistant
+      link: mcp-in-claude/
+      icon: rocket
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
+
+## Products
+
+<CardGrid>
+  <LinkCard title="Age Verification" description="Face age estimation with document and NFC fallback. Fail-closed age gates for POS, vending and web." href="products/age-verification/" />
+  <LinkCard title="Smile & Pay" description="Pay with your face after a one-time enrolment — on wallee terminals, kiosks and apps." href="products/smile-and-pay/" />
+  <LinkCard title="Face Recognition" description="Clear boundaries for recognising people by face. Talk to Voltox before you build." href="guardrails/voltox-face-recognition/" />
+  <LinkCard title="KYC" description="Identity verification with document and face — boundaries and integration path." href="guardrails/voltox-kyc/" />
+</CardGrid>
+
+## Payments on wallee
+
+<CardGrid>
+  <LinkCard title="Payment terminals & ep2" description="ATI, LTI or CTI — flow, recovery, acceptance." href="guides/payment-terminals-and-ep2/" />
+  <LinkCard title="SoftPOS" description="Phone or tablet as the terminal." href="guides/softpos/" />
+  <LinkCard title="E-commerce" description="wallee API v2.0, tokens, webhooks." href="guides/ecommerce-with-wallee/" />
+  <LinkCard title="Surrogate PAN" description="Recognise returning cards without card data." href="guides/surrogate-pan/" />
+</CardGrid>
+
+## Build it right the first time
+
+<CardGrid>
+  <Card title="Guardrails" icon="approve-check">One rule set per product and channel — dos, don'ts, fail-closed contracts. [Browse guardrails](guardrails/voltox-integration-guide/).</Card>
+  <Card title="Speed budget" icon="rocket">Face → decision ≤ 3 s, tap → result ≤ 3 s, server ≤ 800 ms (p95). [Testing & go-live](guides/testing-and-go-live/).</Card>
+  <Card title="Hard self-assessment" icon="list-format">Terminal (ep2) and API (OAuth 2.1 / FAPI 2.0) catalogues. No evidence, no pass. [Open catalogues](self-assessment/terminal/).</Card>
+  <Card title="AI Dev MCP" icon="puzzle">Claude and ChatGPT get the docs, skills, code generator, reviewer and assessments. [Connect](mcp-in-claude/).</Card>
+</CardGrid>

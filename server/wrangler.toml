@@ -1,0 +1,24 @@
+name = "voltox-ai-dev-mcp"
+main = "src/worker.ts"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
+workers_dev = true
+
+# OAuth grants, clients and tokens (props are encrypted by workers-oauth-provider).
+# Create with: npx wrangler kv namespace create OAUTH_KV   → paste the id below.
+[[kv_namespaces]]
+binding = "OAUTH_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[vars]
+# Fill only from the official Voltox API reference. https only.
+VOLTOX_BASE_URLS = "{}"
+VOLTOX_ALLOW_PRODUCTION_WRITES = "false"
+# Canonical resource URL once the custom domain exists (else request origin + /mcp is used)
+# MCP_PUBLIC_URL = "https://mcp.voltox.ai/mcp"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+# Custom domain (after Voltox decides): routes = [{ pattern = "mcp.voltox.ai", custom_domain = true }]

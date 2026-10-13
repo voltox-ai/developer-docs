@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.test-build/
+.wrangler/
+.astro/
+server/src/generated/
+site/src/content/docs/*
+!site/src/content/docs/index.mdx
+site/public/llms*.txt
+.env
+.dev.vars
+*.aar
+*.apk
+*.jks
+*.keystore
+*.pem

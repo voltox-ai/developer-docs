@@ -1,0 +1,27 @@
+{
+  "name": "voltox-ai-dev",
+  "displayName": "Voltox AI Dev",
+  "version": "1.0.0",
+  "description": "Build Voltox Age Verification, Smile & Pay, Face Recognition and KYC integrations on wallee terminals, SoftPOS and e-commerce — docs, guardrails, secure code, automatic review and ep2-grade self-assessments.",
+  "author": {
+    "name": "Voltox",
+    "url": "https://voltox.ai"
+  },
+  "homepage": "https://developers.voltox.ai",
+  "repository": "https://github.com/voltox-ai/developer-docs",
+  "license": "Apache-2.0",
+  "keywords": [
+    "voltox",
+    "wallee",
+    "ep2",
+    "age-verification",
+    "payments",
+    "softpos",
+    "vending",
+    "mcp"
+  ],
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://developers.voltox.ai/ai/",
+  "supportUrl": "https://developers.voltox.ai/support/",
+  "privacyPolicyUrl": "https://developers.voltox.ai/privacy/"
+}

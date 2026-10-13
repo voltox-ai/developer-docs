@@ -1,0 +1,4 @@
+{
+  "voltox-age-verification": {"sdk-android.md": "sdk/android-age-verification.md", "product.md": "products/age-verification.md"},
+  "voltox-smile-and-pay": {"sdk-android.md": "sdk/android-smile-and-pay.md", "sdk-flutter.md": "sdk/flutter-smile-and-pay.md", "product.md": "products/smile-and-pay.md", "decline-codes.md": "reference/decline-codes.md"}
+}

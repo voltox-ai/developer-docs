@@ -1,0 +1,5 @@
+{
+  "_comment": "Registry of Voltox API operations exposed by voltox_api_call. Fill ONLY from the official Voltox API reference (OpenAPI). Empty until Voltox publishes it. Each entry: id, title, method, host (api|backend|backend-age), path, description, skill, scopes, readOnly, production (true if allowed in live env), params (JSON schema).",
+  "version": "0",
+  "operations": []
+}

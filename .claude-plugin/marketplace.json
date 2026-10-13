@@ -1,0 +1,12 @@
+{
+  "name": "voltox-ai-dev",
+  "owner": { "name": "Voltox", "url": "https://voltox.ai" },
+  "metadata": { "description": "Voltox developer tools for Claude" },
+  "plugins": [
+    {
+      "name": "voltox-ai-dev",
+      "source": "./plugins/voltox-ai-dev",
+      "description": "Voltox × wallee integrations: docs, guardrails, secure code, automatic review and ep2-grade self-assessments."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+:root {
+  --sl-color-accent-low: #12363a;
+  --sl-color-accent: #4fa7ae;
+  --sl-color-accent-high: #c4e8ea;
+  --sl-font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+:root[data-theme="light"] {
+  --sl-color-accent-low: #d4ecee;
+  --sl-color-accent: #1c5257;
+  --sl-color-accent-high: #0e2a2d;
+}
+.site-title img { height: 1.4rem; width: auto; }
+:root[data-theme="dark"] .site-title img { filter: brightness(0) invert(1); }
+.sl-markdown-content table { display: block; overflow-x: auto; font-size: 0.875rem; }
+.hero .tagline { max-width: 42rem; }

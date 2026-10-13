@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "voltox-ai-dev": {
+      "type": "http",
+      "url": "https://mcp.voltox.ai/mcp"
+    }
+  }
+}
